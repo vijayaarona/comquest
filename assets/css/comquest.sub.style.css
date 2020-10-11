@@ -111,6 +111,17 @@
             font-size: 39px;
             line-height: 45px;
         }
+
+    .section-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .title-border {
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /*--------------------------------------------------------------
 # About us page style
@@ -234,6 +245,7 @@
     list-style: none;
     display: flex;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
     .award-list li {
@@ -349,6 +361,89 @@
         line-height: 25px;
     }
 
+@media (min-width:320px) and (max-width:575px) {
+    .qp-list li {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+        .qp-list li:first-child {
+            padding-right: 0;
+        }
+
+        .qp-list li:nth-child(2) {
+            border-left: none;
+            border-right: none;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 1rem;
+        }
+
+        .qp-list li:last-child {
+            border-bottom: none;
+        }
+
+    .award-list li {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+        .award-list li div.award-bg {
+            width: 100%;
+            padding: 2rem 2rem;
+        }
+
+    .award-img-left {
+        text-align: center;
+    }
+
+        .award-img-left img {
+            float: none;
+            margin-right: 0;
+        }
+
+    .award-list p {
+        padding-top: 2rem;
+    }
+
+    .award-img-right {
+        text-align: center;
+    }
+
+        .award-img-right img {
+            float: none;
+            margin: 0;
+        }
+
+        .award-img-right p {
+            text-align: left;
+        }
+
+    .bruneisation-title-desc {
+        width: 100%;
+    }
+
+    .bruneisation-list li {
+        width: 100%;
+    }
+
+    .bruneisation-sub-section h5 {
+        font-size: 18px;
+    }
+
+    .carousel-indicators li {
+        height: auto;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .carousel-indicators li {
+        height: auto;
+    }
+}
 /*--------------------------------------------------------------
 # Blog page style
 --------------------------------------------------------------*/
@@ -569,6 +664,42 @@
     justify-content: space-between;
     min-height: 61px;
 }
+
+@media(min-width:320px) and (max-width:575px) {
+    .blog-search {
+        margin-bottom: 2rem;
+    }
+
+    .rp-list li {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .blog-search {
+        margin-bottom: 2rem;
+    }
+
+    .rp-list li {
+        width: calc(100% / 2);
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .blog-search {
+        margin-bottom: 2rem;
+    }
+
+    .rp-list li {
+        width: calc(100% / 3);
+        margin-right: 0;
+        text-align: center;
+    }
+}
 /*--------------------------------------------------------------
 # PodCast page style
 --------------------------------------------------------------*/
@@ -758,6 +889,68 @@
     .mp-listen a:hover {
         background: #b8c630;
     }
+    @media (min-width:320px) and (max-width:575px){
+        .podcast-talkingalign img {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .podcast-talkingalign
+        {
+            text-align:center;
+        }
+        .podcast-talkingdesc
+        {
+            min-height:initial;
+            margin-top:1rem;
+        }
+            .podcast-talkingdesc ul
+            {
+                justify-content:center;
+            }
+                .podcast-talkingdesc ul li a {
+                    margin-right: 0.5rem;
+                }
+            .podcast-talkingdesc h4
+            {
+                font-size:20px;
+            }
+        .re-padd {
+            padding-right: 0;
+        }
+        .re-full h4
+        {
+            font-size:18px;
+        }
+        .re-datetime span {
+            margin-right: 0.5rem;
+        }
+    }
+    @media (min-width:576px) and (max-width:767px){
+        .sm-desc
+        {
+            padding-right:0;
+        }
+        .podcast-talkingalign img {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .podcast-talkingalign {
+            text-align: center;
+        }
+        .podcast-talkingdesc {
+            min-height: initial;
+            margin-top: 1rem;
+        }
+            .podcast-talkingdesc ul li a {
+                margin-right: 0.5rem;
+            }
+            .podcast-talkingdesc ul {
+                justify-content: center;
+            }
+    }
 /*--------------------------------------------------------------
 # Services page style
 --------------------------------------------------------------*/
@@ -879,460 +1072,622 @@
 #other-services {
     padding-bottom: 6rem;
 }
-
-/*--------------------------------------------------------------
+@media (min-width:320px) and (max-width:575px){
+    .services-logo li {
+        width: calc(100% / 1);
+        min-height: 120px;
+        text-align: center;
+    }
+}
+@media (min-width:576px) and (max-width:767px) {
+    .services-logo li {
+        width: calc(100% / 2);
+        min-height: 120px;
+        text-align: center;
+    }
+    .os-inner-items img
+    {
+        width:100%;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .services-logo li {
+        width: calc(100% / 2);
+        min-height: 120px;
+        text-align: center;
+    }
+}
+    /*--------------------------------------------------------------
 # Contact page style
 --------------------------------------------------------------*/
-.contact-left h4 {
-    color: #000000;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-ul.contact-link {
-    padding: 0;
-    margin: 2rem 0 4rem;
-    list-style: none;
-}
-
-.contact-left ul.contact-link li a {
-    color: #007cb3;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
-    border-left: 3px solid;
-    padding-left: 1.3rem;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.contact-left address {
-    color: #333333;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    margin: 1rem 0 2rem;
-    line-height: 25px;
-}
-
-.request-appointment {
-    background: #fff;
-    padding: 2rem 4rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-    .request-appointment h4 {
+    .contact-left h4 {
         color: #000000;
         font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        margin-bottom: 2rem;
+        font-weight: 400;
+        font-size: 20px;
     }
 
-.contact-autofill {
-    text-align: right;
-    margin-bottom: 3rem;
-}
-
-.contact-details {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-    .contact-details li {
-        line-height: 25px;
+    ul.contact-link {
+        padding: 0;
+        margin: 2rem 0 4rem;
+        list-style: none;
     }
 
-    .contact-details li {
-        color: #000000;
+    .contact-left ul.contact-link li a {
+        color: #007cb3;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        border-left: 3px solid;
+        padding-left: 1.3rem;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .contact-left address {
+        color: #333333;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
         font-size: 14px;
-        text-transform: capitalize
+        margin: 1rem 0 2rem;
+        line-height: 25px;
     }
 
-        .contact-details li span {
-            display: inline-block;
-            width: 120px;
-            font-weight: 400;
-        }
-
-.request-appointment input, .request-appointment textarea {
-    border: none;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0;
-    padding: 0;
-    color: #666666;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    margin-bottom: 2rem;
-}
-
-    .request-appointment input:focus, .request-appointment textarea:focus {
-        box-shadow: none;
+    .request-appointment {
+        background: #fff;
+        padding: 2rem 4rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
 
-.request-appointment .btn-submit {
-    padding: 10px 40px;
-    background: #b8c630;
-    color: #000000;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.contact-map {
-    margin: 4rem 0 4rem;
-}
-
-    .contact-map img {
-        width: 100%;
-    }
-/*--------------------------------------------------------------
-# Customer page style
---------------------------------------------------------------*/
-.customer-banner-inner {
-    width: 100%;
-    padding-top: 15rem;
-    padding-right: 5rem;
-}
-
-    .customer-banner-inner h2 {
-        text-align: right;
-        text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bolder;
-        font-size: 41px;
-        color: #ffffff;
-    }
-
-.customer-topdesc {
-    color: #333333;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 35px;
-    padding-top: 4rem;
-}
-
-.customer-right h4 {
-    color: #333333;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 1rem;
-}
-
-.customers-logo {
-    padding: 0;
-    margin: 2rem 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-}
-
-    .customers-logo li {
-        width: calc(100% / 4);
-        border: 1px solid #ccc;
-        height: 150px;
-        border-top: none;
-        border-left: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-.testimonial-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-}
-
-    .testimonial-list li {
-        width: calc(100% / 3);
-        background: transparent;
-        padding: 2rem 3rem;
-    }
-
-        .testimonial-list li:first-child {
-            padding-left: 0;
-        }
-
-        .testimonial-list li:nth-child(2n+2) {
-            background: #fff;
-        }
-
-        .testimonial-list li .testimonial-img {
-            height: 110px;
-        }
-
-        .testimonial-list li .testimonial-desc {
-            margin-bottom: 2rem;
-            min-height: 303px;
-        }
-
-            .testimonial-list li .testimonial-desc p {
-                color: #333333;
-                font-family: 'Lato', sans-serif;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 25px;
-                margin: 0;
-            }
-
-                .testimonial-list li .testimonial-desc p::first-letter {
-                    color: #b8c630;
-                    font-size: 29px;
-                }
-
-        .testimonial-list li .testimonial-name h4 {
+        .request-appointment h4 {
             color: #000000;
             font-family: 'Lato', sans-serif;
             font-weight: 700;
             font-size: 16px;
+            margin-bottom: 2rem;
         }
 
-        .testimonial-list li .testimonial-name h6 {
-            color: #333333;
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            font-size: 12px;
-        }
-/*--------------------------------------------------------------
-# Leadership page style
---------------------------------------------------------------*/
-#leadership-banner {
-    height: 657px;
-}
-
-    #leadership-banner .banner-inner {
-        width: 530px;
-        padding-top: 6rem;
-    }
-
-        #leadership-banner .banner-inner p {
-            color: #fff;
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            font-size: 19px;
-        }
-
-.leader-name {
-    text-align: right;
-    padding-right: 2rem;
-    padding-top: 4.4rem;
-}
-
-    .leader-name h3 {
-        color: #fff;
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-    }
-
-    .leader-name h5 {
-        color: #fff;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-    }
-
-.leaders-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-    .leaders-list li {
-        width: calc(100% / 3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .contact-autofill {
+        text-align: right;
         margin-bottom: 3rem;
     }
 
-        .leaders-list li .leadersimg {
-            width: 225px;
-            height: 225px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
+    .contact-details {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+        .contact-details li {
+            line-height: 25px;
         }
 
-            .leaders-list li .leadersimg img {
-                width: 225px;
-                height: 225px;
-                border-radius: 50%;
-            }
-
-        .leaders-list li h4 {
-            color: #1f6ea0;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            text-align: center;
-            margin-bottom: 1.2rem;
-            width: 80%;
-        }
-
-        .leaders-list li h5 {
-            color: #4e4d4d;
+        .contact-details li {
+            color: #000000;
             font-family: 'Lato', sans-serif;
             font-weight: 300;
             font-size: 14px;
-            text-align: center;
-            width: 80%;
+            text-transform: capitalize
         }
-/*--------------------------------------------------------------
-# Partners page style
---------------------------------------------------------------*/
-.partners-topdesc h4 {
-    color: #007cb3;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 1.3rem;
-}
 
-.partners-topdesc p {
-    color: #333333;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    margin-bottom: 3rem;
-}
+            .contact-details li span {
+                display: inline-block;
+                width: 120px;
+                font-weight: 400;
+            }
 
-.partners-card {
-    background: #f5f5f5;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.partner-logo {
-    display: flex;
-    background: #fff;
-    width: 245px;
-    height: 115px;
-    justify-content: center;
-    align-items: center;
-}
-
-.partner-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-    .partner-desc h4 {
-        color: #007cb3;
+    .request-appointment input, .request-appointment textarea {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        padding: 0;
+        color: #666666;
         font-family: 'Lato', sans-serif;
-        font-weight: 700;
+        font-weight: 300;
         font-size: 16px;
-        margin-bottom: 14px;
+        margin-bottom: 2rem;
     }
 
-    .partner-desc p {
+        .request-appointment input:focus, .request-appointment textarea:focus {
+            box-shadow: none;
+        }
+
+    .request-appointment .btn-submit {
+        padding: 10px 40px;
+        background: #b8c630;
+        color: #000000;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .contact-map {
+        margin: 4rem 0 4rem;
+    }
+
+        .contact-map img {
+            width: 100%;
+        }
+
+    @media (min-width:320px) and (max-width:575px) {
+        .request-appointment {
+            margin-top: 1rem;
+            padding: 2rem 2rem;
+        }
+    }
+
+    @media (min-width:576px) and (max-width:767px) {
+        .request-appointment {
+            margin-top: 1rem;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+        .request-appointment {
+            padding: 2rem 2rem;
+        }
+    }
+    /*--------------------------------------------------------------
+# Customer page style
+--------------------------------------------------------------*/
+    .customer-banner-inner {
+        width: 100%;
+        padding-top: 15rem;
+        padding-right: 5rem;
+    }
+
+        .customer-banner-inner h2 {
+            text-align: right;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 41px;
+            color: #ffffff;
+        }
+
+    .customer-topdesc {
         color: #333333;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 24px;
+        line-height: 35px;
+        padding-top: 4rem;
     }
 
-.partner-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 3rem;
-}
-
-    .partner-button a {
-        background: #b8c630;
-        color: #fff;
-        font-size: 1rem;
-        padding: 8px 12px;
-        background: #b8c630;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 0px 14px;
+    .customer-right h4 {
+        color: #333333;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 1rem;
     }
 
-#partners {
-    padding-bottom: 8rem;
-}
-/*--------------------------------------------------------------
-# Our Team page style
+    .customers-logo {
+        padding: 0;
+        margin: 2rem 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+
+        .customers-logo li {
+            width: calc(100% / 4);
+            border: 1px solid #ccc;
+            height: 150px;
+            border-top: none;
+            border-left: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .testimonial-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+        .testimonial-list li {
+            width: calc(100% / 3);
+            background: transparent;
+            padding: 2rem 3rem;
+        }
+
+            .testimonial-list li:first-child {
+                padding-left: 0;
+            }
+
+            .testimonial-list li:nth-child(2n+2) {
+                background: #fff;
+            }
+
+            .testimonial-list li .testimonial-img {
+                height: 110px;
+            }
+
+            .testimonial-list li .testimonial-desc {
+                margin-bottom: 2rem;
+                min-height: 303px;
+            }
+
+                .testimonial-list li .testimonial-desc p {
+                    color: #333333;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin: 0;
+                }
+
+                    .testimonial-list li .testimonial-desc p::first-letter {
+                        color: #b8c630;
+                        font-size: 29px;
+                    }
+
+            .testimonial-list li .testimonial-name h4 {
+                color: #000000;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .testimonial-list li .testimonial-name h6 {
+                color: #333333;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 12px;
+            }
+
+    @media (min-width:320px) and (max-width:575px) {
+        .customer-banner-inner {
+            padding-top: 0rem;
+            padding-right: 0;
+        }
+
+            .customer-banner-inner h2 {
+                font-size: 22px;
+            }
+
+        .customer-topdesc {
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .customers-logo li {
+            width: calc(100% / 1);
+        }
+
+        .testimonial-list li {
+            width: calc(100% / 1);
+        }
+    }
+
+    @media (min-width:576px) and (max-width:767px) {
+        .customers-logo li {
+            width: calc(100% / 2);
+        }
+
+        .testimonial-list li {
+            width: calc(100% / 1);
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+        .customer-topdesc {
+            font-size: 20px;
+        }
+    }
+    /*--------------------------------------------------------------
+# Leadership page style
 --------------------------------------------------------------*/
-.team-list {
-    padding: 0 5rem;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    flex-wrap: wrap;
-    margin-bottom:2rem;
-}
+    #leadership-banner {
+        height: 657px;
+    }
 
-    .team-list li {
-        width: calc(100% / 4);
-        border-right: 1px solid #fff;
+        #leadership-banner .banner-inner {
+            width: 530px;
+            padding-top: 6rem;
+        }
+
+            #leadership-banner .banner-inner p {
+                color: #fff;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 19px;
+            }
+
+    .leader-name {
+        text-align: right;
+        padding-right: 2rem;
+        padding-top: 4.4rem;
+    }
+
+        .leader-name h3 {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .leader-name h5 {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+    .leaders-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+        .leaders-list li {
+            width: calc(100% / 3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+
+            .leaders-list li .leadersimg {
+                width: 225px;
+                height: 225px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+
+                .leaders-list li .leadersimg img {
+                    width: 225px;
+                    height: 225px;
+                    border-radius: 50%;
+                }
+
+            .leaders-list li h4 {
+                color: #1f6ea0;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 1.2rem;
+                width: 80%;
+            }
+
+            .leaders-list li h5 {
+                color: #4e4d4d;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                text-align: center;
+                width: 80%;
+            }
+
+    @media (min-width:320px) and (max-width:575px) {
+        .leader-name {
+            padding-right: 1rem;
+            padding-top: 3rem;
+        }
+
+        .leaders-list li {
+            width: calc(100% / 1);
+        }
+    }
+
+    @media (min-width:576px) and (max-width:767px) {
+        .leaders-list li {
+            width: calc(100% / 1);
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+        .leaders-list li {
+            width: calc(100% / 2);
+        }
+    }
+    /*--------------------------------------------------------------
+# Partners page style
+--------------------------------------------------------------*/
+    .partners-topdesc h4 {
+        color: #007cb3;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 1.3rem;
+    }
+
+    .partners-topdesc p {
+        color: #333333;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
         margin-bottom: 3rem;
     }
 
-        .team-list li .team-img {
-            width: 100%;
-            height: 255px;
+    .partners-card {
+        background: #f5f5f5;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .partner-logo {
+        display: flex;
+        background: #fff;
+        width: 245px;
+        height: 115px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partner-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .partner-desc h4 {
+            color: #007cb3;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 14px;
         }
 
-            .team-list li .team-img img {
+        .partner-desc p {
+            color: #333333;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+    .partner-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+
+        .partner-button a {
+            background: #b8c630;
+            color: #fff;
+            font-size: 1rem;
+            padding: 8px 12px;
+            background: #b8c630;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0px 14px;
+        }
+
+    #partners {
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width:320px) and (max-width:575px) {
+        .partners-topdesc h4 {
+            font-size: 18px;
+        }
+
+        .partner-logo {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media(min-width:576px) and (max-width:767px) {
+        .partner-logo {
+            margin: 0 auto 1rem;
+        }
+    }
+
+    @media(min-width:768px) and (max-width:991px) {
+        .partner-logo {
+            margin: 0 auto 1rem;
+        }
+    }
+    /*--------------------------------------------------------------
+# Our Team page style
+--------------------------------------------------------------*/
+    .team-list {
+        padding: 0 5rem;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+        .team-list li {
+            width: calc(100% / 4);
+            border-right: 1px solid #fff;
+            margin-bottom: 3rem;
+        }
+
+            .team-list li .team-img {
                 width: 100%;
-                max-height: 255px;
+                height: 255px;
             }
 
-        .team-list li .team-name {
-            background: #007cb3;
-            padding: 1rem;
-        }
-        .team-list li:nth-child(2n+2) .team-name {
-            background: #35acd9;
-        }
+                .team-list li .team-img img {
+                    width: 100%;
+                    max-height: 255px;
+                }
+
+            .team-list li .team-name {
+                background: #007cb3;
+                padding: 1rem;
+            }
+
+            .team-list li:nth-child(2n+2) .team-name {
+                background: #35acd9;
+            }
+
             .team-list li .team-name h4 {
                 color: #fff;
                 font-family: 'Lato', sans-serif;
                 font-weight: 700;
                 font-size: 16px;
-                margin-bottom:1rem;
+                margin-bottom: 1rem;
             }
+
             .team-list li .team-name h5 {
                 color: #fff;
                 font-family: 'Lato', sans-serif;
                 font-weight: 400;
                 font-size: 12px;
             }
-.team-social {
-    padding: 5px 0;
-}
-.team-social a {
-    color: #999999;
-    font-size: 1rem;
-    padding-right: 10px;
-}
-    .team-social a:hover {
-        color: #b8c630;
+
+    .team-social {
+        padding: 5px 0;
     }
+
+        .team-social a {
+            color: #999999;
+            font-size: 1rem;
+            padding-right: 10px;
+        }
+
+            .team-social a:hover {
+                color: #b8c630;
+            }
+@media (min-width:320px) and (max-width:575px) {
+    .team-list{
+        padding:0;
+    }
+        .team-list li {
+            width: calc(100% / 1);
+        }
+        }
+@media (min-width:576px) and (max-width:767px) {
+    .team-list {
+        padding: 0;
+    }
+
+        .team-list li {
+            width: calc(100% / 2);
+        }
+}
+@media (min-width:768px) and (max-width:1199px) {
+    .team-list {
+        padding: 0;
+    }
+
+        .team-list li {
+            width: calc(100% / 3);
+        }
+}
